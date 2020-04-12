@@ -1,0 +1,168 @@
+﻿html,
+body{
+	background: #fafafa;
+	font-family: $font-site;
+	@include font(normal, normal, 16px, 1.5, $color-text);
+	box-sizing:border-box;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+img{
+	max-width: 100%;
+}
+
+a{
+	color: $color-orange;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+p{
+	@include font(normal, normal, 1rem, 1.5, $color-grey);
+	margin-bottom: 10px;
+}
+
+h1,
+.h1{
+	@include font(normal, 900, 2.875rem, 1.2, $color-text);
+	text-transform: uppercase;
+	margin-bottom: 40px;
+}
+
+h2,
+.h2{
+	@include font(normal, 900, 2.25rem, 1.2, $color-text);
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+h3,
+.h3{
+	@include font(normal, 900, 2rem, 1.2, $color-text);
+	margin-bottom: 10px;
+}
+
+h4,
+.h4{
+	@include font(normal, bold, 2rem, 1.2, $color-text);
+	margin-bottom: 10px;
+}
+
+h5,
+.h5{
+	@include font(normal, bold, 1.5rem, 1.2, $color-text);
+	margin-bottom: 10px;
+}
+
+h6,
+.h6{
+	@include font(normal, bold, 1.125rem, 1.2, $color-text);
+	margin-bottom: 10px;
+}
+
+.wrapper{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	width: 100%;
+	max-width: 1920px;
+	margin: 0 auto;
+	padding-top: 100px;
+	background: url(#{$path-img}/bg-page-top-grey.png) no-repeat top right,
+				url(#{$path-img}/bg-page-left-grey.png) no-repeat 0 1245px;
+
+	&_main{
+		background: url(#{$path-img}/bg-page-top.png) no-repeat top right,
+					url(#{$path-img}/bg-page-left.png) no-repeat 0 1245px;
+	}
+}
+
+main{
+	flex: 1;
+	padding-bottom: 100px;
+}
+
+.btn,
+input[type="submit"].btn,
+button.btn{
+	display: inline-block;
+	height: 3.75rem;
+	min-width: 210px;
+	background: linear-gradient(to bottom, rgba(250,123,50,1) 0%, rgba(250,66,20,1) 100%);
+	border: 0;
+	border-radius: 4px;
+	@include font(normal, bold, 1rem, 3.75rem, #fff);
+	text-decoration: none;
+	padding: 0 20px;
+	text-align: center;
+	cursor: pointer;
+	text-decoration: none;
+	box-shadow: 0px 22px 36px 0px rgba(250,66,20,0.22);
+	transition: all 0.2s ease 0s;
+}
+
+.btn:hover,
+input[type="submit"].btn:hover,
+button.btn:hover{
+	color: $color-text;
+	background: linear-gradient(to bottom, rgba(250,215,100,1) 0%, rgba(250,142,20,1) 100%);
+	box-shadow: 0px 22px 36px 0px rgba(250,180,100,1);
+}
+
+.btn_small,
+input[type="submit"].btn_small,
+button.btn_small{
+	height: 2.5rem;
+	line-height: 2.5rem;
+	min-width: 108px;
+	padding: 0 15px;
+	font-size: 0.8125rem;
+}
+
+.btn_white,
+input[type="submit"].btn_white,
+button.btn_white{
+	background: #fff;
+	box-shadow: none;
+	color: $color-text;
+}
+
+.btn_white:hover,
+input[type="submit"].btn_white:hover,
+button.btn_white:hover{
+	background: linear-gradient(to bottom, rgba(250,123,50,1) 0%, rgba(250,66,20,1) 100%);
+	color: #fff;
+	box-shadow: 0px 22px 36px 0px rgba(250,180,100,0.22);
+}
+
+.logo{
+	@include font(normal, 900, 1.125rem, 1.2, $color-text);
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&__accent{color: $color-orange;}
+}
+
+.code{
+	background-color: #f7f7f7;
+	border: 1px solid #e1e1e8;
+	color: #d14;
+	padding: 1px 4px;
+	display: inline-block;
+	font-family: monospace, arial;
+	border-radius: 3px;
+}
+
+.h-text-left{text-align: left !important;}
+.h-text-center{text-align: center !important;}
+.h-text-right{text-align: right !important;}
+.h-text-justify{text-align: justify !important;}
+.h-text-uppercase{text-transform: uppercase !important;}
+.h-text-bold {font-weight: 700 !important;}

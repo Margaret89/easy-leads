@@ -1,0 +1,36 @@
+/*-------------- top-menu -----------------*/
+.top-menu{
+	display: flex;
+	align-items: center;
+	@include reset-list;
+
+	&__item{
+		@include reset-list;
+		padding: 0 14px;
+	}
+
+	&__item,
+	&__text{
+		@include font(normal, bold, 0.8125rem, 1.2, $color-text);
+		text-decoration: none;
+	}
+
+	&__text{position: relative;}
+
+	&__text::after{
+		content: '';
+		display: inline-block;
+		width: 0;
+		height: 3px;
+		background: $color-orange;
+		position: absolute;
+		bottom: -6px;
+		left: 0;
+		transition: all 0.2s ease 0s;
+	}
+
+	&__item.active &__text::after,
+	&__item &__text:hover::after,{
+		width: 100%;
+	}
+}

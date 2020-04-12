@@ -1,0 +1,751 @@
+/*-------------- fonts -----------------*/
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-ExtraBold.eot");
+  src: local("Panton ExtraBold"), local("Panton-ExtraBold"), url("../fonts/Panton/Panton-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-ExtraBold.woff") format("woff"), url("../fonts/Panton/Panton-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-RegularItalic.eot");
+  src: local("Panton Regular Italic"), local("Panton-RegularItalic"), url("../fonts/Panton/Panton-RegularItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-RegularItalic.woff") format("woff"), url("../fonts/Panton/Panton-RegularItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-ThinItalic.eot");
+  src: local("Panton Thin Italic"), local("Panton-ThinItalic"), url("../fonts/Panton/Panton-ThinItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-ThinItalic.woff") format("woff"), url("../fonts/Panton/Panton-ThinItalic.ttf") format("truetype");
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-Bold.eot");
+  src: local("Panton Bold"), local("Panton-Bold"), url("../fonts/Panton/Panton-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-Bold.woff") format("woff"), url("../fonts/Panton/Panton-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-ExtraLight.eot");
+  src: local("Panton ExtraLight"), local("Panton-ExtraLight"), url("../fonts/Panton/Panton-ExtraLight.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-ExtraLight.woff") format("woff"), url("../fonts/Panton/Panton-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-ExtraBoldItalic.eot");
+  src: local("Panton ExtraBold Italic"), local("Panton-ExtraBoldItalic"), url("../fonts/Panton/Panton-ExtraBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-ExtraBoldItalic.woff") format("woff"), url("../fonts/Panton/Panton-ExtraBoldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-ExtraLightItalic.eot");
+  src: local("Panton ExtraLight Italic"), local("Panton-ExtraLightItalic"), url("../fonts/Panton/Panton-ExtraLightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-ExtraLightItalic.woff") format("woff"), url("../fonts/Panton/Panton-ExtraLightItalic.ttf") format("truetype");
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-Thin.eot");
+  src: local("Panton Thin"), local("Panton-Thin"), url("../fonts/Panton/Panton-Thin.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-Thin.woff") format("woff"), url("../fonts/Panton/Panton-Thin.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-SemiBold.eot");
+  src: local("Panton SemiBold"), local("Panton-SemiBold"), url("../fonts/Panton/Panton-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-SemiBold.woff") format("woff"), url("../fonts/Panton/Panton-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-Heavy.eot");
+  src: local("Panton Heavy"), local("Panton-Heavy"), url("../fonts/Panton/Panton-Heavy.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-Heavy.woff") format("woff"), url("../fonts/Panton/Panton-Heavy.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-SemiBoldItalic.eot");
+  src: local("Panton SemiBold Italic"), local("Panton-SemiBoldItalic"), url("../fonts/Panton/Panton-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-SemiBoldItalic.woff") format("woff"), url("../fonts/Panton/Panton-SemiBoldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-BoldItalic.eot");
+  src: local("Panton Bold Italic"), local("Panton-BoldItalic"), url("../fonts/Panton/Panton-BoldItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-BoldItalic.woff") format("woff"), url("../fonts/Panton/Panton-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-BlackItalic.eot");
+  src: local("Panton Black Italic"), local("Panton-BlackItalic"), url("../fonts/Panton/Panton-BlackItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-BlackItalic.woff") format("woff"), url("../fonts/Panton/Panton-BlackItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-LightItalic.eot");
+  src: local("Panton Light Italic"), local("Panton-LightItalic"), url("../fonts/Panton/Panton-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-LightItalic.woff") format("woff"), url("../fonts/Panton/Panton-LightItalic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-Regular.eot");
+  src: local("Panton Regular"), local("Panton-Regular"), url("../fonts/Panton/Panton-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-Regular.woff") format("woff"), url("../fonts/Panton/Panton-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-HeavyItalic.eot");
+  src: local("Panton Heavy Italic"), local("Panton-HeavyItalic"), url("../fonts/Panton/Panton-HeavyItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-HeavyItalic.woff") format("woff"), url("../fonts/Panton/Panton-HeavyItalic.ttf") format("truetype");
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-Light.eot");
+  src: local("Panton Light"), local("Panton-Light"), url("../fonts/Panton/Panton-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-Light.woff") format("woff"), url("../fonts/Panton/Panton-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Panton';
+  src: url("../fonts/Panton/Panton-Black.eot");
+  src: local("Panton Black"), local("Panton-Black"), url("../fonts/Panton/Panton-Black.eot?#iefix") format("embedded-opentype"), url("../fonts/Panton/Panton-Black.woff") format("woff"), url("../fonts/Panton/Panton-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+/*-------------- base style -----------------*/
+html,
+body {
+  background: #fafafa;
+  font-family: "Panton", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #fa4214;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #757575;
+  margin-bottom: 10px;
+}
+
+h1,
+.h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.875rem;
+  line-height: 1.2;
+  color: #000;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+h2,
+.h2 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  color: #000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h3,
+.h3 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+h4,
+.h4 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+h5,
+.h5 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+h6,
+.h6 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding-top: 100px;
+  background: url(../img/bg-page-top-grey.png) no-repeat top right, url(../img/bg-page-left-grey.png) no-repeat 0 1245px;
+}
+
+.wrapper_main {
+  background: url(../img/bg-page-top.png) no-repeat top right, url(../img/bg-page-left.png) no-repeat 0 1245px;
+}
+
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-bottom: 100px;
+}
+
+.btn,
+input[type="submit"].btn,
+button.btn {
+  display: inline-block;
+  height: 3.75rem;
+  min-width: 210px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fa7b32), to(#fa4214));
+  background: -o-linear-gradient(top, #fa7b32 0%, #fa4214 100%);
+  background: linear-gradient(to bottom, #fa7b32 0%, #fa4214 100%);
+  border: 0;
+  border-radius: 4px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 3.75rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  -webkit-box-shadow: 0px 22px 36px 0px rgba(250, 66, 20, 0.22);
+          box-shadow: 0px 22px 36px 0px rgba(250, 66, 20, 0.22);
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.btn:hover,
+input[type="submit"].btn:hover,
+button.btn:hover {
+  color: #000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fad764), to(#fa8e14));
+  background: -o-linear-gradient(top, #fad764 0%, #fa8e14 100%);
+  background: linear-gradient(to bottom, #fad764 0%, #fa8e14 100%);
+  -webkit-box-shadow: 0px 22px 36px 0px #fab464;
+          box-shadow: 0px 22px 36px 0px #fab464;
+}
+
+.btn_small,
+input[type="submit"].btn_small,
+button.btn_small {
+  height: 2.5rem;
+  line-height: 2.5rem;
+  min-width: 108px;
+  padding: 0 15px;
+  font-size: 0.8125rem;
+}
+
+.btn_white,
+input[type="submit"].btn_white,
+button.btn_white {
+  background: #fff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #000;
+}
+
+.btn_white:hover,
+input[type="submit"].btn_white:hover,
+button.btn_white:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fa7b32), to(#fa4214));
+  background: -o-linear-gradient(top, #fa7b32 0%, #fa4214 100%);
+  background: linear-gradient(to bottom, #fa7b32 0%, #fa4214 100%);
+  color: #fff;
+  -webkit-box-shadow: 0px 22px 36px 0px rgba(250, 180, 100, 0.22);
+          box-shadow: 0px 22px 36px 0px rgba(250, 180, 100, 0.22);
+}
+
+.logo {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  color: #000;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo__accent {
+  color: #fa4214;
+}
+
+.code {
+  background-color: #f7f7f7;
+  border: 1px solid #e1e1e8;
+  color: #d14;
+  padding: 1px 4px;
+  display: inline-block;
+  font-family: monospace, arial;
+  border-radius: 3px;
+}
+
+.h-text-left {
+  text-align: left !important;
+}
+
+.h-text-center {
+  text-align: center !important;
+}
+
+.h-text-right {
+  text-align: right !important;
+}
+
+.h-text-justify {
+  text-align: justify !important;
+}
+
+.h-text-uppercase {
+  text-transform: uppercase !important;
+}
+
+.h-text-bold {
+  font-weight: 700 !important;
+}
+
+/*-------------- Header -----------------*/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  z-index: 100;
+}
+
+.header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 25px 0;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.header__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  margin-right: 25px;
+}
+
+.header .lang {
+  padding-left: 18px;
+  margin-left: 17px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.header .lang__list {
+  left: 18px;
+}
+
+.header__auth {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin-right: 26px;
+}
+
+.header__auth:hover {
+  color: #fa4214;
+}
+
+.header.fixed {
+  background: #fff;
+}
+
+.header.fixed .header__content {
+  padding: 10px 0;
+}
+
+.header.fixed .btn_white {
+  background: #f5f5f5;
+}
+
+.header.fixed .btn_white:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fa7b32), to(#fa4214));
+  background: -o-linear-gradient(top, #fa7b32 0%, #fa4214 100%);
+  background: linear-gradient(to bottom, #fa7b32 0%, #fa4214 100%);
+}
+
+/*-------------- Footer -----------------*/
+.footer {
+  background: #141414;
+  padding: 72px 0 78px;
+  color: #fff;
+}
+
+.footer .logo {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 24px;
+  color: #fff;
+}
+
+.footer__company, .footer__copyright {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.8125rem;
+  line-height: 1.85;
+  color: #fff;
+}
+
+.footer__company {
+  margin-bottom: 24px;
+}
+
+.footer__head {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 23px;
+  margin-top: 4px;
+}
+
+.footer .social {
+  margin-top: 32px;
+  margin-bottom: 33px;
+}
+
+.footer .lang__def::after {
+  background-position: -40px -5px;
+}
+
+/*-------------- top-menu -----------------*/
+.top-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-menu__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  padding: 0 14px;
+}
+
+.top-menu__item, .top-menu__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  color: #000;
+  text-decoration: none;
+}
+
+.top-menu__text {
+  position: relative;
+}
+
+.top-menu__text::after {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 3px;
+  background: #fa4214;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.top-menu__item.active .top-menu__text::after,
+.top-menu__item .top-menu__text:hover::after {
+  width: 100%;
+}
+
+/*-------------- lang -----------------*/
+.lang {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.lang__def {
+  padding: 9px 20px 9px 12px;
+  font-size: 0;
+  position: relative;
+  cursor: pointer;
+}
+
+.lang__def .lang__icon {
+  margin-right: 0;
+}
+
+.lang__def::after {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 6px;
+  background: url(../img/sprite.png) no-repeat -5px -5px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 0;
+}
+
+.lang__list {
+  display: none;
+  width: 140px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.lang__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.lang__item.inactive {
+  display: none;
+}
+
+.lang__icon {
+  width: 16px;
+  margin-right: 7px;
+}
+
+.lang__label {
+  max-width: calc(100% - 23px);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  color: #000;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.lang:hover .lang__list {
+  display: block;
+}
+
+.lang__item:hover .lang__label {
+  color: #fa4214;
+}
+
+/*-------------- social -----------------*/
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.social__item {
+  display: inline-block;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.social__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.social__item_fb {
+  width: 10px;
+  height: 18px;
+  background: url(../img/sprite.png) no-repeat -5px -20px;
+}
+
+.social__item_vk {
+  width: 18px;
+  height: 10px;
+  background: url(../img/sprite.png) no-repeat -5px -50px;
+}
+
+.social__item_tg {
+  width: 18px;
+  height: 15px;
+  background: url(../img/sprite.png) no-repeat -5px -70px;
+}
+
+.social__item_in {
+  width: 18px;
+  height: 18px;
+  background: url(../img/sprite.png) no-repeat -5px -95px;
+}
+
+.social__item_fb:hover {
+  background-position: -40px -20px;
+}
+
+.social__item_vk:hover {
+  background-position: -40px -50px;
+}
+
+.social__item_tg:hover {
+  background-position: -40px -70px;
+}
+
+.social__item_in:hover {
+  background-position: -40px -95px;
+}
+
+/*-------------- footer-menu -----------------*/
+.footer-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-menu__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.footer-menu__item,
+.footer-menu__item a {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  line-height: 1.2;
+  color: #999;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.footer-menu__item a:hover {
+  color: #fff;
+}

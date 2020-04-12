@@ -1,0 +1,46 @@
+/*-------------- Header -----------------*/
+.header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: transparent;
+	z-index: 100;
+
+	&__content{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 25px 0;
+		transition: all 0.3s ease 0s;
+	}
+
+	&__main{
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo{margin-right: 25px;}
+
+	.lang{
+		padding-left: 18px;
+		margin-left: 17px;
+		border-left: 1px solid rgba(0,0,0,0.1);
+
+		&__list{left: 18px;}
+	}
+
+	&__auth{
+		@include font(normal, bold, 0.8125rem, 1.2, $color-text);
+		text-decoration: none;
+		transition: all 0.3s ease 0s;
+		margin-right: 26px;
+	}
+
+	&__auth:hover{color: $color-orange;}
+
+	&.fixed{background: #fff;}
+	&.fixed &__content{padding: 10px 0;}
+	&.fixed .btn_white{background: #f5f5f5;}
+	&.fixed .btn_white:hover{background: linear-gradient(to bottom, rgba(250,123,50,1) 0%, rgba(250,66,20,1) 100%);}
+}

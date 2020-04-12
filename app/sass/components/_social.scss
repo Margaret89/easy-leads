@@ -1,0 +1,43 @@
+/*-------------- social -----------------*/
+.social{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	&__item{
+		display: inline-block;
+		cursor: pointer;
+		text-decoration: none;
+	}
+
+	&__item:not(:last-child){margin-right: 30px;}
+
+	&__item_fb{
+		width: 10px;
+		height: 18px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -20px;
+	}
+
+	&__item_vk{
+		width: 18px;
+		height: 10px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -50px;
+	}
+
+	&__item_tg{
+		width: 18px;
+		height: 15px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -70px;
+	}
+
+	&__item_in{
+		width: 18px;
+		height: 18px;
+		background: url(#{$path-img}/sprite.png) no-repeat -5px -95px;
+	}
+
+	&__item_fb:hover{background-position: -40px -20px;}
+	&__item_vk:hover{background-position: -40px -50px;}
+	&__item_tg:hover{background-position: -40px -70px;}
+	&__item_in:hover{background-position: -40px -95px;}
+}

@@ -1,0 +1,19 @@
+/*-------------- footer-menu -----------------*/
+.footer-menu{
+	@include reset-list;
+
+	&__item{
+		@include reset-list;
+	}
+
+	&__item:not(:last-child){margin-bottom: 20px;}
+
+	&__item,
+	&__item a{
+		@include font(normal, bold, 0.8125rem, 1.2, #999);
+		text-decoration: none;
+		transition: all 0.2s ease 0s;
+	}
+
+	&__item a:hover{color: #fff;}
+}

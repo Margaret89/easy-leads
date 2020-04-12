@@ -1,0 +1,33 @@
+/*-------------- Footer -----------------*/
+.footer{
+	background: #141414;
+	padding: 72px 0 78px;
+	color: #fff;
+
+	.logo{
+		display: inline-block;
+		vertical-align: middle;
+		margin-right: 24px;
+		color: #fff;
+	}
+
+	&__company,
+	&__copyright{
+		@include font(normal, normal, 0.8125rem, 1.85, #fff);
+	}
+
+	&__company{margin-bottom: 24px;}
+
+	&__head{
+		@include font(normal, 900, 1.25rem, 1.2, #fff);
+		margin-bottom: 23px;
+		margin-top: 4px;
+	}
+
+	.social{
+		margin-top: 32px;
+		margin-bottom: 33px;
+	}
+
+	.lang__def::after{background-position: -40px -5px;}
+}
