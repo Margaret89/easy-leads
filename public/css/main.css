@@ -995,3 +995,55 @@ button.btn_white:hover {
   color: #757575;
   margin: 10px auto 0;
 }
+
+/*-------------- geography -----------------*/
+.geography {
+  margin-top: 110px;
+}
+
+.geography__img {
+  margin-left: -212px;
+}
+
+.geography__content {
+  position: relative;
+  padding-top: 55px;
+}
+
+.geography__content::after {
+  content: '';
+  display: inline-block;
+  width: 178px;
+  height: 111px;
+  background: url(../img/clouds.png) no-repeat center;
+  position: absolute;
+  top: 0;
+  right: -200px;
+}
+
+.geography__head {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 1.17;
+  color: #000;
+}
+
+.geography__head-line {
+  color: #fad764;
+  text-decoration: underline;
+}
+
+.geography__head-line span {
+  color: #000;
+  text-decoration: none;
+}
+
+.geography__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.56;
+  color: #757575;
+  margin-top: 15px;
+}

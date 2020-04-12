@@ -1,0 +1,41 @@
+/*-------------- geography -----------------*/
+.geography{
+	margin-top: 110px;
+
+	&__img{margin-left: -212px;}
+
+	&__content{
+		position: relative;
+		padding-top: 55px;
+	}
+
+	&__content::after{
+		content: '';
+		display: inline-block;
+		width: 178px;
+		height: 111px;
+		background: url(#{$path-img}/clouds.png) no-repeat center;
+		position: absolute;
+		top: 0;
+		right: -200px;
+	}
+
+	&__head{
+		@include font(normal, 900, 2.25rem, 1.17, $color-text);
+	}
+
+	&__head-line{
+		color: $color-yellow;
+		text-decoration: underline;
+
+		span{
+			color: $color-text;
+			text-decoration: none;
+		}
+	}
+
+	&__text{
+		@include font(normal, normal, 1.125rem, 1.56, $color-grey);
+		margin-top: 15px;
+	}
+}
