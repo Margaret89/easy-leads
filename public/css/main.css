@@ -204,7 +204,7 @@ h2,
   line-height: 1.2;
   color: #000;
   text-align: center;
-  margin-bottom: 14px;
+  margin-bottom: 10px;
 }
 
 h3,
@@ -271,7 +271,7 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding-bottom: 100px;
+  padding-bottom: 65px;
 }
 
 .btn,
@@ -897,10 +897,10 @@ button.btn_white:hover {
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
-  line-height: 1.2;
+  line-height: 1.625;
   color: #757575;
   text-align: center;
-  margin-bottom: 64px;
+  margin-bottom: 61px;
 }
 
 .step-item-wrap:nth-child(even) .step-item__icon::before {
@@ -1050,17 +1050,17 @@ button.btn_white:hover {
 
 /*-------------- advant -----------------*/
 .advant-wrap {
-  margin-top: 71px;
+  margin-top: 72px;
 }
 
 .advant-wrap__text {
   font-style: normal;
   font-weight: normal;
   font-size: 1rem;
-  line-height: 1.2;
+  line-height: 1.625;
   color: #757575;
   text-align: center;
-  margin-bottom: 62px;
+  margin-bottom: 58px;
 }
 
 .advant-item-wrap:nth-child(even) .advant-item__icon::before {
@@ -1136,4 +1136,78 @@ button.btn_white:hover {
   line-height: 1.57;
   color: #757575;
   margin-top: 8px;
+}
+
+/*-------------- partner -----------------*/
+.partner-wrap {
+  margin-top: 54px;
+}
+
+.partner-wrap__text {
+  max-width: 770px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.625;
+  color: #757575;
+  text-align: center;
+  margin: 0 auto 62px;
+}
+
+.partner-wrap .btn {
+  display: table;
+  margin: -23px auto 0;
+}
+
+.partner-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 60px -15px 0;
+}
+
+.partner-list__item {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: top;
+  width: 170px;
+  height: 80px;
+  margin: 0 15px 15px;
+}
+
+.partner-list__content {
+  position: relative;
+  text-decoration: none;
+}
+
+.partner-list__icon-color {
+  max-width: 100%;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.partner-list__content:hover .partner-list__icon-color {
+  opacity: 1;
 }
