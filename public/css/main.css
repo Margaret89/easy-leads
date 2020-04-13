@@ -260,11 +260,11 @@ h6,
   max-width: 1920px;
   margin: 0 auto;
   padding-top: 90px;
-  background: url(../img/bg-page-top-grey.png) no-repeat top right, url(../img/bg-page-left-grey.png) no-repeat 0 1245px;
+  background: url(../img/bg-page-left-grey.png) no-repeat 0 1245px;
 }
 
 .wrapper_main {
-  background: url(../img/bg-page-top.png) no-repeat top right, url(../img/bg-page-left.png) no-repeat 0 1245px;
+  background: url(../img/bg-page-left.png) no-repeat 0 1245px;
 }
 
 main {
@@ -279,7 +279,7 @@ input[type="submit"].btn,
 button.btn {
   display: inline-block;
   height: 3.75rem;
-  min-width: 210px;
+  min-width: 150px;
   background: -webkit-gradient(linear, left top, left bottom, from(#fa7b32), to(#fa4214));
   background: -o-linear-gradient(top, #fa7b32 0%, #fa4214 100%);
   background: linear-gradient(to bottom, #fa7b32 0%, #fa4214 100%);
@@ -291,7 +291,7 @@ button.btn {
   line-height: 3.75rem;
   color: #fff;
   text-decoration: none;
-  padding: 0 20px;
+  padding: 0 30px;
   text-align: center;
   cursor: pointer;
   text-decoration: none;
@@ -389,6 +389,10 @@ button.btn_white:hover {
 
 .h-text-bold {
   font-weight: 700 !important;
+}
+
+.fancybox-is-open .fancybox-bg {
+  background: rgba(219, 219, 219, 0.68);
 }
 
 /*-------------- Header -----------------*/
@@ -751,6 +755,12 @@ button.btn_white:hover {
 }
 
 /*-------------- top-block -----------------*/
+.top-block {
+  margin-top: -93px;
+  padding-top: 90px;
+  overflow: hidden;
+}
+
 .top-block__content {
   margin-top: 120px;
 }
@@ -779,15 +789,30 @@ button.btn_white:hover {
   text-decoration: none;
 }
 
+.top-block__slogan_small .top-block__slogan-content {
+  font-size: 2.25rem;
+  line-height: 1.28;
+}
+
 .top-block .btn {
   margin-top: 35px;
 }
 
-.top-block__img {
-  position: relative;
+.top-block__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.67;
+  color: #757575;
+  margin-top: 22px;
 }
 
-.top-block__img::before {
+.top-block-img {
+  position: relative;
+  max-height: 733px;
+}
+
+.top-block-img::before {
   content: '';
   display: inline-block;
   width: 206px;
@@ -796,9 +821,10 @@ button.btn_white:hover {
   position: absolute;
   top: 85px;
   left: -28px;
+  z-index: 1;
 }
 
-.top-block__img::after {
+.top-block-img::after {
   content: '';
   display: inline-block;
   width: 237px;
@@ -807,6 +833,22 @@ button.btn_white:hover {
   position: absolute;
   bottom: 240px;
   right: -35px;
+  z-index: 1;
+}
+
+.top-block-img__bg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  max-width: none;
+}
+
+.top-block-img__content {
+  position: relative;
+}
+
+.top-block-img__content img {
+  max-height: 100%;
 }
 
 /*-------------- success -----------------*/
@@ -1486,4 +1528,68 @@ input[type=checkbox]:checked + .input-check__label .input-check__text {
   color: #000;
   text-align: center;
   margin-bottom: 23px;
+}
+
+/*-------------- info-block -----------------*/
+.info-block {
+  margin-top: 17px;
+  margin-bottom: 38px;
+}
+
+.info-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.info-block__item:not(:last-child) {
+  margin-bottom: 90px;
+}
+
+.info-block__img, .info-block__content {
+  width: calc(50% - 15px);
+}
+
+.info-block__img {
+  text-align: center;
+}
+
+.info-block__head {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 2.25rem;
+  line-height: 1.17;
+  color: #000;
+}
+
+.info-block__head-line {
+  color: #fad764;
+  text-decoration: underline;
+}
+
+.info-block__head-line span {
+  color: #000;
+  text-decoration: none;
+}
+
+.info-block__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.125rem;
+  line-height: 1.55;
+  color: #757575;
+  margin-top: 10px;
+}
+
+.info-block__item:nth-child(even) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
 }
