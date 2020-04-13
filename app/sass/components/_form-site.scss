@@ -1,0 +1,104 @@
+/*-------------- form-site -----------------*/
+.form-site{
+	&__head{
+		@include font(normal, 900, 1.875rem, 1.2, $color-text);
+		text-align: center;
+		margin-bottom: 23px;
+	}
+
+	&__field{
+		margin-bottom: 12px;
+	}
+
+	input[type="text"],
+	input[type="email"],
+	input[type="password"],
+	textarea{
+		height: 3.125rem;
+		width: 100%;
+		outline: none;
+		border-radius: 3px;
+		border: 1px solid #dbdbdb;
+		font-family: $font-site;
+		@include font(normal, normal, 0.875rem, 3rem, $color-text);
+		padding: 0 16px;
+		margin: 0;
+		box-shadow: none;
+		background: #fff;
+		box-shadow: inset 0px 8px 22px 0px rgba(0,0,0,0.06);
+		transition: all 0.3s ease 0s;
+	}
+
+	input[type="text"]:focus,
+	input[type="email"]:focus,
+	input[type="password"]:focus,
+	textarea:focus{
+		box-shadow: none;
+		border-color: $color-orange;
+	}
+
+	textarea{
+		height: 120px;
+	}
+
+	input[type="text"]:placeholder,
+	input[type="email"]::placeholder,
+	input[type="password"]::placeholder,
+	textarea::placeholder{
+		color: #adadad;
+		opacity: 1;
+	}
+
+	&__polit{
+		.input-check__text{
+			font-size: 0.75rem;
+			color: $color-text;
+		}
+
+		a{
+			color: #999;
+			text-decoration: none;
+			transition: all 0.2s ease 0s;
+		}
+
+		a:hover{color: $color-orange;}
+	}
+
+	&__btn{
+		margin-top: 30px;
+		text-align: center;
+	}
+
+	&__forget{
+		@include font(normal, normal, 0.875rem, 1.2, #999);
+		text-decoration: none;
+		margin-left: 25px;
+		transition: all 0.2s ease 0s;
+	}
+
+	&__forget:hover{color: $color-orange;}
+
+	&__check{
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -5px;
+	}
+}
+
+.form-auth{
+	.form-site__btn{
+		display: flex;
+		align-items: center;
+		text-align: left;
+	}
+
+	.btn,
+	input[type="submit"].btn,
+	button.btn{
+		min-width: 104px;
+	}
+}
+
+.form-registr .tabs-page__item{
+	width: calc(50% - 10px);
+}

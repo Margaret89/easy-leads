@@ -1211,3 +1211,279 @@ button.btn_white:hover {
 .partner-list__content:hover .partner-list__icon-color {
   opacity: 1;
 }
+
+/*-------------- input-check -----------------*/
+.input-check__label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.input-check input[type=checkbox] {
+  display: none;
+}
+
+.input-check__mark {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  background: #fff;
+  position: relative;
+}
+
+.input-check__text {
+  max-width: calc(100% - 26px);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: #999;
+  margin-left: 10px;
+}
+
+input[type=checkbox]:checked + .input-check__label .input-check__mark:after {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 8px;
+  background: url(../img/sprite.png) no-repeat -5px -120px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+input[type=checkbox]:checked + .input-check__label .input-check__text {
+  color: #000;
+}
+
+/*-------------- form-site -----------------*/
+.form-site__head {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  color: #000;
+  text-align: center;
+  margin-bottom: 23px;
+}
+
+.form-site__field {
+  margin-bottom: 12px;
+}
+
+.form-site input[type="text"],
+.form-site input[type="email"],
+.form-site input[type="password"],
+.form-site textarea {
+  height: 3.125rem;
+  width: 100%;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid #dbdbdb;
+  font-family: "Panton", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 3rem;
+  color: #000;
+  padding: 0 16px;
+  margin: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: #fff;
+  -webkit-box-shadow: inset 0px 8px 22px 0px rgba(0, 0, 0, 0.06);
+          box-shadow: inset 0px 8px 22px 0px rgba(0, 0, 0, 0.06);
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.form-site input[type="text"]:focus,
+.form-site input[type="email"]:focus,
+.form-site input[type="password"]:focus,
+.form-site textarea:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: #fa4214;
+}
+
+.form-site textarea {
+  height: 120px;
+}
+
+.form-site input[type="email"]::-webkit-input-placeholder, .form-site input[type="password"]::-webkit-input-placeholder, .form-site textarea::-webkit-input-placeholder {
+  color: #adadad;
+  opacity: 1;
+}
+
+.form-site input[type="email"]::-moz-placeholder, .form-site input[type="password"]::-moz-placeholder, .form-site textarea::-moz-placeholder {
+  color: #adadad;
+  opacity: 1;
+}
+
+.form-site input[type="email"]:-ms-input-placeholder, .form-site input[type="password"]:-ms-input-placeholder, .form-site textarea:-ms-input-placeholder {
+  color: #adadad;
+  opacity: 1;
+}
+
+.form-site input[type="email"]::-ms-input-placeholder, .form-site input[type="password"]::-ms-input-placeholder, .form-site textarea::-ms-input-placeholder {
+  color: #adadad;
+  opacity: 1;
+}
+
+.form-site input[type="text"]:placeholder,
+.form-site input[type="email"]::placeholder,
+.form-site input[type="password"]::placeholder,
+.form-site textarea::placeholder {
+  color: #adadad;
+  opacity: 1;
+}
+
+.form-site__polit .input-check__text {
+  font-size: 0.75rem;
+  color: #000;
+}
+
+.form-site__polit a {
+  color: #999;
+  text-decoration: none;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.form-site__polit a:hover {
+  color: #fa4214;
+}
+
+.form-site__btn {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.form-site__forget {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: #999;
+  text-decoration: none;
+  margin-left: 25px;
+  -webkit-transition: all 0.2s ease 0s;
+  -o-transition: all 0.2s ease 0s;
+  transition: all 0.2s ease 0s;
+}
+
+.form-site__forget:hover {
+  color: #fa4214;
+}
+
+.form-site__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.form-auth .form-site__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+.form-auth .btn,
+.form-auth input[type="submit"].btn,
+.form-auth button.btn {
+  min-width: 104px;
+}
+
+.form-registr .tabs-page__item {
+  width: calc(50% - 10px);
+}
+
+/*-------------- tabs-page -----------------*/
+.tabs-page__list, .tabs-page__item {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tabs-page__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: -5px;
+  margin-right: -5px;
+}
+
+.tabs-page__item {
+  display: inline-block;
+  height: 2.875rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: #999;
+  text-decoration: none;
+  text-align: center;
+  background: #fff;
+  border-radius: 5px;
+  padding: 14px 15px;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  position: relative;
+  margin: 5px;
+}
+
+.tabs-page__item.active, .tabs-page__item:hover {
+  background: #fad764;
+  color: #000;
+}
+
+.tabs-page__content {
+  margin-top: 16px;
+}
+
+.tabs-page__content-item {
+  display: none;
+}
+
+/*-------------- popup -----------------*/
+.popup {
+  display: none;
+  min-width: 370px;
+  padding: 30px;
+  background: #fafafa;
+  border-radius: 10px;
+}
+
+.popup .h3,
+.popup h3 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.875rem;
+  line-height: 1.2;
+  color: #000;
+  text-align: center;
+  margin-bottom: 23px;
+}

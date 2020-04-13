@@ -60,3 +60,87 @@
 		</div>
 	</div>
 </footer>
+
+<!-- Форма авторизации -->
+<div id="auth" class="popup">
+	<div class="h3">Авторизация</div>
+
+	<div class="form-auth">
+		<form>
+			<div class="form-site">
+				<div class="form-site__content">
+					<div class="form-site__field"><input type="email", placeholder="Email"></div>
+					<div class="form-site__field"><input type="password", placeholder="Пароль"></div>
+				</div>
+
+				<div class="form-site__btn">
+					<input type="submit" value="Войти" class="btn">
+					<a href="#" class="form-site__forget">Забыли пароль?</a>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+<!-- Форма регистрации -->
+<div  id="registr" class="popup">
+	<div class="h3">Регистрация</div>
+
+	<div class="form-registr">
+		<div class="tabs-page js-tabs-page">
+			<ul class="tabs-page__list js-tabs-page-list">
+				<li class="tabs-page__item js-tabs-page-item" data-item="registr-tab1">Блогер</li>
+				<li class="tabs-page__item js-tabs-page-item" data-item="registr-tab2">Рекламодатель</li>
+			</ul>
+
+			<div class="tabs-page__content js-tabs-page-content">
+				<div id="registr-tab1" class="tabs-page__content-item js-tabs-page-content-item js-tabs-page-content-item">
+					<form>
+						<div class="form-site">
+							<div class="form-site__content">
+								<div class="form-site__field"><input type="text", placeholder="+7 (800) __-__-___" class="js-phone"></div>
+								<div class="form-site__field"><input type="email", placeholder="Email"></div>
+								<div class="form-site__field"><input type="password", placeholder="Пароль"></div>
+							</div>
+
+							<div class="form-site__polit">
+								<div class="input-check">
+									<input type="checkbox" id="polit" checked="checked">
+									<label for="polit" class="input-check__label"><span class="input-check__mark"></span><span class="input-check__text">Я согласен с <a href="#">Политикой конфиденциальности</a></span></label>
+								</div>
+							</div>
+
+							<div class="form-site__btn">
+								<input type="submit" value="Зарегистрироваться" class="btn">
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div id="registr-tab2" class="tabs-page__content-item js-tabs-page-content-item js-tabs-page-content-item">
+					<form>
+						<div class="form-site">
+							<div class="form-site__content">
+								<div class="form-site__field"><input type="text", placeholder="+7 (800) __-__-___" class="js-phone"></div>
+								<div class="form-site__field"><input type="text", placeholder="Test"></div>
+								<div class="form-site__field"><input type="email", placeholder="Email"></div>
+								<div class="form-site__field"><input type="password", placeholder="Пароль"></div>
+							</div>
+
+							<div class="form-site__polit">
+								<div class="input-check">
+									<input type="checkbox" id="polit" checked="checked">
+									<label for="polit" class="input-check__label"><span class="input-check__mark"></span><span class="input-check__text">Я согласен с <a href="#">Политикой конфиденциальности</a></span></label>
+								</div>
+							</div>
+
+							<div class="form-site__btn">
+								<input type="submit" value="Зарегистрироваться" class="btn">
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

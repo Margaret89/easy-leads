@@ -26,7 +26,71 @@ $(document).ready(function () {
 		posHeader();
 	});
 	
-	// //---------- Маска для телефона -------------
-	// $.mask.definitions['~'] = "[+-]";
-	// $("#phone").mask("(999) 999-9999");
+// Маска для телефона
+	$.mask.definitions['~'] = "[+-]";
+	$('.js-phone').mask('+7(999) 999-9999');
+
+// Табуляция
+	tabPage('.js-tabs-page');
+	tabPage('.js-tabs-inner');
+
+	function tabPage(name) {
+		if ($(name).length) {
+
+			$(name).each(function(){
+				if (!$(this).hasClass('js-tabs-no-active')) {
+					$(this).find(name+'-item:first').addClass("active");
+					$(this).find(name+'-content-item:first').fadeIn();
+				}
+			});
+
+			var windowWidth = $(window).width();
+
+			$(window).resize(function(){
+				windowWidth = $(window).width();
+
+				$(name).each(function(){
+					// console.log('11111');
+					if ($(this).find('.js-tab-select').length) {
+						console.log($(this));
+						if (windowWidth < 768) {
+							// console.log('222');
+							var dataTab = $(name+'-item.active').attr('data-item');
+							// console.log(dataTab);
+
+							$(this).find('.js-tab-select option').removeAttr('selected');
+							$(this).find('.js-tab-select option[data-item='+dataTab+']').attr('selected', 'selected')
+
+							$(this).find('.js-tab-select').trigger('change');
+						}
+					}
+				});
+			});
+
+
+			$(name+'-item').click(function(e) {
+				e.preventDefault();
+				var $parent = $(this).parents(name);
+				var dataTab = $(this).attr('data-item');
+
+				$parent.find(name+'-content-item').hide();
+				$parent.find(name+'-item').removeClass('active');
+
+				$(this).addClass("active");
+				$parent.find('#' + dataTab).fadeIn();
+			});
+
+			$('.js-tab-select').change(function() {
+				var $parent = $(this).parents(name);
+				var dataTab = $(this).find('option:selected').data('item');
+
+				$parent.find(name+'-content-item').hide();
+				$parent.find(name+'-item').removeClass('active');
+
+				$parent.find('[data-item ='+ dataTab+']').addClass("active");
+				$parent.find('#' + dataTab).fadeIn();
+
+			});
+		}
+	}
 });

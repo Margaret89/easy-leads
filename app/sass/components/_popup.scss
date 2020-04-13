@@ -1,0 +1,15 @@
+/*-------------- popup -----------------*/
+.popup{
+	display: none;
+	min-width: 370px;
+	padding: 30px;
+	background: #fafafa;
+	border-radius: 10px;
+
+	.h3,
+	h3{
+		@include font(normal, 900, 1.875rem, 1.2, $color-text);
+		text-align: center;
+		margin-bottom: 23px;
+	}
+}
