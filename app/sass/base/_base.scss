@@ -6,6 +6,12 @@ body{
 	box-sizing:border-box;
 }
 
+body.no-scroll{
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+}
+
 *,
 *:before,
 *:after {
@@ -174,3 +180,8 @@ button.btn_white:hover{
 .t-color-orange{color: $color-orange}
 
 .fancybox-is-open .fancybox-bg{background: rgba(219,219,219,0.68);}
+
+@media (max-width: 767px) {
+	.container{width: 100%!important;}
+	.wrapper{padding-top: 52px;}
+}

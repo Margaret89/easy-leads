@@ -17,3 +17,11 @@
 
 	&__item a:hover{color: #fff;}
 }
+
+@media (max-width: 767px) {
+	.footer-menu{
+		margin-bottom: 30px;
+
+		&__item:not(:last-child){margin-bottom: 13px;}
+	}
+}

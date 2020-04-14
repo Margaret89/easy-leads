@@ -93,4 +93,19 @@ $(document).ready(function () {
 			});
 		}
 	}
+
+// Открыть/Закрыть мобильное меню
+	$('.js-open-menu').click(function(){
+		$('.js-top-menu-wrap').slideDown(300);
+		$('.js-body').addClass('no-scroll');
+	});
+
+	$('.js-close-menu').click(function(){
+		 closeCatMenu();
+	});
+
+	function closeCatMenu() {
+		$('.js-top-menu-wrap').slideUp(300);
+		$('.js-body').removeClass('no-scroll');
+	}
 });

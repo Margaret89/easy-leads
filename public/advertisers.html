@@ -8,9 +8,10 @@
 		<link rel="stylesheet" href="css/bootstrap-reboot.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.css">
 		<link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="css/hamburger.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
-	<body>
+	<body class="js-body">
 		<div class="wrapper">
 			<header class="header js-header">
 				<div class="container">
@@ -18,11 +19,17 @@
 						<div class="col-12">
 							<div class="header__content">
 								<div class="header__main">
+									<span class="ic-hamburger js-open-menu d-inline-block d-md-none"><span></span></span>
+			
 									<div class="header__logo">
-										<a href="main.html" class="logo">Easy <span class="logo__accent">leads</span></a>
+										<a href="main.html" class="logo d-md-inline d-none">Easy <span class="logo__accent">Leads</span></a>
+			
+										<a href="main.html" class="logo d-inline d-md-none">E<span class="logo__accent">L</span></a>
 									</div>
 			
-									<nav>
+									<nav class="top-menu-wrap js-top-menu-wrap">
+										<span class="ic-hamburger active js-close-menu d-inline-block d-md-none"><span></span></span>
+			
 										<ul class="top-menu">
 											<li class="top-menu__item active"><a href="bloggers.html" class="top-menu__text">Блогерам</a></li>
 											<li class="top-menu__item"><a href="advertisers.html" class="top-menu__text">Рекламодателям</a></li>
@@ -194,16 +201,18 @@
 			<footer class="footer">
 				<div class="container">
 					<div class="row">
-						<div class="col-3">
-							<a href="main.html" class="logo">Easy <span class="logo__accent">leads</span></a>
+						<div class="col-md-3 flex-last flex-md-first">
+							<div class="footer__logo">
+								<a href="main.html" class="logo">Easy <span class="logo__accent">leads</span></a>
 			
-							<div class="lang">
-								<div class="lang__def js-lang-def" data-label="Russian"><img src="img/flag-ru.jpg" alt="" class="lang__icon js-lang-icon"></div>
+								<div class="lang">
+									<div class="lang__def js-lang-def" data-label="Russian"><img src="img/flag-ru.jpg" alt="" class="lang__icon js-lang-icon"></div>
 			
-								<div class="lang__list js-lang-list">
-									<div class="lang__item inactive js-lang-item" data-label="Russian"><img src="img/flag-ru.jpg" alt="" class="lang__icon js-lang-icon"><span class="lang__label">Russian</span></div>
+									<div class="lang__list js-lang-list">
+										<div class="lang__item inactive js-lang-item" data-label="Russian"><img src="img/flag-ru.jpg" alt="" class="lang__icon js-lang-icon"><span class="lang__label">Russian</span></div>
 			
-									<div class="lang__item js-lang-item" data-label="English"><img src="img/flag-en.jpg" alt="" class="lang__icon js-lang-icon"><span class="lang__label">English</span></div>
+										<div class="lang__item js-lang-item" data-label="English"><img src="img/flag-en.jpg" alt="" class="lang__icon js-lang-icon"><span class="lang__label">English</span></div>
+									</div>
 								</div>
 							</div>
 			
@@ -219,7 +228,7 @@
 							<div class="footer__copyright">Copyright © 2018. All rights reserved.</div>
 						</div>
 			
-						<div class="col-3">
+						<div class="col-6 col-md-3">
 							<div class="footer__head">EASY LEADS</div>
 			
 							<ul class="footer-menu">
@@ -231,7 +240,7 @@
 							</ul>
 						</div>
 			
-						<div class="col-3">
+						<div class="col-6 col-md-3">
 							<div class="footer__head">Компания</div>
 			
 							<ul class="footer-menu">
@@ -242,7 +251,7 @@
 							</ul>
 						</div>
 			
-						<div class="col-3">
+						<div class="col-6 col-md-3">
 							<div class="footer__head">Get Started</div>
 			
 							<ul class="footer-menu">
