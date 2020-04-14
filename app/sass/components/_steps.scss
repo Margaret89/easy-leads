@@ -126,6 +126,16 @@
 			top: -37px;
 			right: -17px;
 		}
+
+		&:nth-child(4) .step-item__num{
+			top: -33px;
+			right: -15px;
+		}
+
+		&:nth-child(6) .step-item__num{
+			bottom: -23px;
+			right: -25px;
+		}
 	}
 
 	.step-item{

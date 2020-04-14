@@ -139,6 +139,37 @@ $(document).ready(function () {
 				showPartner = false;
 			}
 		}
+	}
+
+// Слайдер блогеров включаем на мобильном разрешении
+	var showBlogger = false;
+
+	sliderBlogger();
+
+	$(window).on('resize',function(){
+		widthWindow = $(window).width();
+		sliderBlogger();
+	});
+
+	function sliderBlogger() {
+		if (widthWindow < 768) {
+			if (showBlogger == false) {
+				$('.js-team-list').slick({
+					infinite: false,
+					slidesToShow: 1,
+					slidesToScroll: 1,
+					arrows: true,
+					dots: false,
+				});
+
+				showBlogger = true;
+			}
+		}else{
+			if (showBlogger == true) {
+				$('.js-team-list').slick('unslick');
+				showBlogger = false;
+			}
+		}
 		
 	}
 });

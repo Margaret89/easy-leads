@@ -1,0 +1,25 @@
+/*-------------- slick -----------------*/
+.slick-arrow{
+	display: inline-block;
+	width: 12px;
+	height: 20px;
+	background-color: transparent;
+	background-image: url(#{$path-img}/sprite.png);
+	background-repeat: no-repeat;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	box-shadow: none;
+	font-size: 0;
+	position: absolute;
+	@include top-center;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.slick-prev{background-position: -5px -140px; left: 16px;}
+.slick-next{background-position: -40px -140px; right: 16px;}
+
+.slick-prev:hover{background-position: -5px -170px;}
+.slick-next:hover{background-position: -40px -170px;}

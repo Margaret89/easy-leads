@@ -34,9 +34,15 @@
 }
 
 @media (max-width: 767px) {
+	.info-block-wrap{
+		&+.step-wrap{margin-top: 25px;}
+	}
+
 	.info-block{
 		&__item,
-		&__item:nth-child(2n){
+		&__item:nth-child(2n),
+		&_reverse &__item:nth-child(even),
+		&_reverse &__item:nth-child(odd){
 			flex-direction: column-reverse;
 		}
 
