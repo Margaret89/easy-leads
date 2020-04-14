@@ -7,10 +7,14 @@
 		text-align: center;
 		margin-bottom: 61px;
 	}
+
+	& + .info-block-wrap{margin-top: 42px;}
 }
 
 .step-item-wrap{
-	&:nth-child(even) .step-item{
+	margin-bottom: 52px;
+
+	&:nth-child(3n+2) .step-item{
 		&__icon::before{
 			transform: perspective(400px) rotateY(-30deg);
 			left: -11px;
@@ -26,6 +30,19 @@
 		top: -63px;
 		left: auto;
 		right: -23px
+	}
+
+	&:nth-child(4) .step-item__num{
+		top: -54px;
+		left: auto;
+		right: -19px
+	}
+
+	&:nth-child(6) .step-item__num{
+		top: auto;
+		bottom: -30px;
+		left: auto;
+		right: -40px
 	}
 }
 

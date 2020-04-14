@@ -26,7 +26,7 @@ a:hover{
 
 p{
 	@include font(normal, normal, 1rem, 1.5, $color-grey);
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 h1,
@@ -169,6 +169,8 @@ button.btn_white:hover{
 .h-text-right{text-align: right !important;}
 .h-text-justify{text-align: justify !important;}
 .h-text-uppercase{text-transform: uppercase !important;}
-.h-text-bold {font-weight: 700 !important;}
+.h-text-bold{font-weight: 700 !important;}
+
+.t-color-orange{color: $color-orange}
 
 .fancybox-is-open .fancybox-bg{background: rgba(219,219,219,0.68);}

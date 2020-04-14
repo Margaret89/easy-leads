@@ -1,0 +1,10 @@
+/*-------------- line-text -----------------*/
+.line-text{
+	color: $color-yellow;
+	text-decoration: underline;
+
+	span{
+		color: #000;
+		text-decoration: none;
+	}
+}

@@ -39,7 +39,8 @@
 
 .top-block-img{
 	position: relative;
-	max-height: 733px;
+	max-height: 768px;
+	padding-bottom: 35px;
 
 	// img{
 	// 	position: relative;
@@ -65,15 +66,15 @@
 		height: 152px;
 		background: url(#{$path-img}/youtube.png) no-repeat center;
 		position: absolute;
-		bottom: 240px;
-		right: -35px;
+		bottom: 0;
+		right: 103px;
 		z-index: 1;
 	}
 
 	&__bg{
 		position: absolute;
 		left: 0;
-		bottom: 0;
+		bottom: 35px;
 		max-width: none;
 	}
 
@@ -81,5 +82,10 @@
 		position: relative;
 
 		img{max-height: 100%;}
+	}
+
+	&_main::after{
+		bottom: 240px;
+		right: -103px;
 	}
 }
