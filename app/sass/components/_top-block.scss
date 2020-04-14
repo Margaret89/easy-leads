@@ -125,12 +125,31 @@
 	.top-block{
 		&__content{
 			margin-top: 26px;
-			padding-right: 50px;
 		}
 
 		&__info{position: relative;}
 
-		&__content::before{
+		&__head,
+		&__slogan-content,
+		&__slogan_small &__slogan-content{
+			font-size: 1.875rem;
+			line-height: 1.2;
+		}
+
+		.btn{margin-top: 20px;}
+
+		&__text{
+			font-size: 1rem;
+			line-height: 1.5;
+			margin-top: 11px;
+		}
+
+		&_main .top-block-img::before,
+		&_main .top-block-img::after{
+			display: none;
+		}
+
+		&_main &__icons::before{
 			content: '';
 			display: inline-block;
 			width: 112px;
@@ -143,7 +162,7 @@
 			z-index: 1;
 		}
 
-		&__icons::after{
+		&_main &__icons::after{
 			content: '';
 			display: inline-block;
 			width: 128px;
@@ -156,23 +175,30 @@
 			z-index: 0;
 		}
 
-		&__head,
-		&__slogan-content{
-			font-size: 1.875rem;
-			line-height: 1.2;
-		}
-
-		.btn{margin-top: 20px;}
+		&_main &__content{padding-right: 50px;}
 	}
 
 	.top-block-img{
 		margin-top: 27px;
 
-		&__bg{left: -158px;}
-
-		&::before,
-		&::after{
+		&__bg{
+			// left: -158px;
 			display: none;
+		}
+
+		&::before{
+			width: 112px;
+			height: 100px;
+			top: 6px;
+			right: -31px;
+			left: auto;
+		}
+
+		&::after{
+			width: 128px;
+			height: 82px;
+			bottom: 23px;
+			right: 0;
 		}
 	}
 }

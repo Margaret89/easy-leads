@@ -187,7 +187,10 @@ button.btn_white:hover{
 
 	.wrapper{
 		padding-top: 52px;
-		background: none;
+		background: url(#{$path-img}/bg-page-top-grey.png) no-repeat -250px -85px;
+		// background: none;
+
+		&_main{background-image: url(#{$path-img}/bg-page-top.png);}
 	}
 
 	h2,
