@@ -1984,6 +1984,12 @@ input[type=checkbox]:checked + .input-check__label .input-check__text {
   margin-bottom: 23px;
 }
 
+@media (max-width: 479px) {
+  .popup {
+    min-width: 340px;
+  }
+}
+
 /*-------------- info-block -----------------*/
 .info-block {
   margin-top: 17px;

@@ -13,3 +13,7 @@
 		margin-bottom: 23px;
 	}
 }
+
+@media (max-width: 479px) {
+	.popup{min-width: 340px;}
+}
