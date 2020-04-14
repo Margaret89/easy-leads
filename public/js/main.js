@@ -108,4 +108,37 @@ $(document).ready(function () {
 		$('.js-top-menu-wrap').slideUp(300);
 		$('.js-body').removeClass('no-scroll');
 	}
+
+// Слайдер партнеров включаем на мобильном разрешении
+	var widthWindow = $(window).width();
+	var showPartner = false;
+
+	sliderPartner();
+
+	$(window).on('resize',function(){
+		widthWindow = $(window).width();
+		sliderPartner();
+	});
+
+	function sliderPartner() {
+		if (widthWindow < 768) {
+			if (showPartner == false) {
+				$('.js-partner-list').slick({
+					infinite: false,
+					slidesToShow: 2.5,
+					slidesToScroll: 2,
+					arrows: false,
+					dots: false,
+				});
+
+				showPartner = true;
+			}
+		}else{
+			if (showPartner == true) {
+				$('.js-partner-list').slick('unslick');
+				showPartner = false;
+			}
+		}
+		
+	}
 });

@@ -51,3 +51,40 @@
 
 	&__icon{padding-top: 15px;}
 }
+
+@media (max-width: 1279px) {
+	.success{
+		&__num{font-size: 3rem;}
+		&__icon{width: 80px}
+		&__main{width: calc(100% - 80px);}
+		&__item{padding: 20px 7px 30px 30px;}
+		&__item::before{left: 7px;}
+	}
+}
+
+@media (max-width: 991px) {
+	.success{
+		margin-top: 20px;
+
+		&__num{font-size: 2rem;}
+		&__num-label{font-size: 1.25rem;}
+	}
+}
+
+@media (max-width: 767px) {
+	.success{
+		display: block;
+		margin-top: -85px;
+
+		&__item{
+			width: calc(100% - 30px);
+			padding: 20px 7px 2px 20px;
+			margin-bottom: -25px;
+		}
+
+		&__num{font-size: 2.875rem;}
+		&__num-label{font-size: 1.375rem;}
+		&__icon{width: 105px}
+		&__main{width: calc(100% - 105px);}
+	}
+}

@@ -183,5 +183,17 @@ button.btn_white:hover{
 
 @media (max-width: 767px) {
 	.container{width: 100%!important;}
-	.wrapper{padding-top: 52px;}
+	main{padding-bottom: 35px;}
+
+	.wrapper{
+		padding-top: 52px;
+		background: none;
+	}
+
+	h2,
+	.h2{
+		font-size: 1.875rem;
+		line-height: 1.06;
+		margin-bottom: 12px;
+	}
 }

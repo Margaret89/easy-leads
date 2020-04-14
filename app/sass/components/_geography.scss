@@ -1,6 +1,7 @@
 /*-------------- geography -----------------*/
 .geography{
 	margin-top: 58px;
+	overflow: hidden;
 
 	&__img{margin-left: -212px;}
 
@@ -27,5 +28,49 @@
 	&__text{
 		@include font(normal, normal, 1.125rem, 1.56, $color-grey);
 		margin-top: 15px;
+	}
+}
+
+@media (max-width: 767px) {
+	.geography{
+		margin-top: 30px;
+
+		&__content{
+			text-align: center;
+			padding-top: 0;
+		}
+
+		&__head{
+			font-size: 1.875rem;
+			line-height: 1.06;
+		}
+
+		&__text{
+			font-size: 1rem;
+			line-height: 1.5;
+		}
+
+		&__img{
+			position: relative;
+			margin-left: -180px;
+			margin-right: -127px;
+			min-height: 324px;
+
+			img{position: relative;}
+		}
+
+		&__img::before{
+			content: '';
+			display: inline-block;
+			width: 115px;
+			height: 324px;
+			background: url(#{$path-img}/bg-page-left-mobile.png) no-repeat center;
+			background-size: contain;
+			position: absolute;
+			left: 165px;
+			@include top-center;
+		}
+
+		&+.advant-wrap{margin-top: -14px;}
 	}
 }

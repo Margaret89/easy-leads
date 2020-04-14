@@ -6,6 +6,8 @@
 
 	&__content{
 		margin-top: 120px;
+		position: relative;
+		z-index: 1;
 	}
 
 	&__head{
@@ -53,6 +55,7 @@
 		width: 206px;
 		height: 184px;
 		background: url(#{$path-img}/insta.png) no-repeat center;
+		background-size: contain;
 		position: absolute;
 		top: 85px;
 		left: -28px;
@@ -65,6 +68,7 @@
 		width: 237px;
 		height: 152px;
 		background: url(#{$path-img}/youtube.png) no-repeat center;
+		background-size: contain;
 		position: absolute;
 		bottom: 0;
 		right: 103px;
@@ -87,5 +91,88 @@
 	&_main::after{
 		bottom: 240px;
 		right: -103px;
+	}
+}
+
+@media (max-width: 1440px) {
+	.top-block-img{
+		&_main::after{right: 0;}
+	}
+}
+
+@media (max-width: 991px) {
+	.top-block{
+		&__content{margin-top: 60px;}
+		&__slogan-content{font-size: 2.25rem;}
+	}
+
+	.top-block-img{
+		&::before{
+			width: 150px;
+			height: 134px;
+		}
+
+		&::after{
+			width: 156px;
+			height: 100px;
+		}
+
+		&_main::after{bottom: 0;}
+	}
+}
+
+@media (max-width: 767px) {
+	.top-block{
+		&__content{
+			margin-top: 26px;
+			padding-right: 50px;
+		}
+
+		&__info{position: relative;}
+
+		&__content::before{
+			content: '';
+			display: inline-block;
+			width: 112px;
+			height: 100px;
+			background: url(#{$path-img}/insta.png) no-repeat center;
+			background-size: contain;
+			position: absolute;
+			top: 6px;
+			right: -31px;
+			z-index: 1;
+		}
+
+		&__icons::after{
+			content: '';
+			display: inline-block;
+			width: 128px;
+			height: 82px;
+			background: url(#{$path-img}/youtube.png) no-repeat center;
+			background-size: contain;
+			position: absolute;
+			bottom: 23px;
+			right: 0;
+			z-index: 0;
+		}
+
+		&__head,
+		&__slogan-content{
+			font-size: 1.875rem;
+			line-height: 1.2;
+		}
+
+		.btn{margin-top: 20px;}
+	}
+
+	.top-block-img{
+		margin-top: 27px;
+
+		&__bg{left: -158px;}
+
+		&::before,
+		&::after{
+			display: none;
+		}
 	}
 }

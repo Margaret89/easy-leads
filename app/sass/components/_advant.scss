@@ -66,3 +66,18 @@
 		margin-top: 8px;
 	}
 }
+
+@media (max-width: 767px) {
+	.advant-wrap{
+		&__text{
+			line-height: 1.5;
+			margin-bottom: 31px;
+		}
+	}
+
+	.advant-item{
+		margin-bottom: 12px;
+
+		&__info{width: calc(100% - 100px);}
+	}
+}

@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/bootstrap-reboot.css">
 		<link rel="stylesheet" href="css/bootstrap-grid.css">
 		<link rel="stylesheet" href="js/vendor/fancybox/jquery.fancybox.min.css">
+		<link rel="stylesheet" href="js/vendor/slick/slick.css">
 		<link rel="stylesheet" href="css/hamburger.css">
 		<link rel="stylesheet" href="css/main.css">
 	</head>
@@ -63,11 +64,15 @@
 						<div class="row">
 							<div class="col-4">
 								<div class="top-block__content">
-									<div class="top-block__slogan top-block__slogan_small"><span class="top-block__slogan-content">Мы автоматизируем процесс работы блоггеров с рекламодателями.</span></div>
+									<div class="top-block__icons d-md-none"></div>
 
-									<div class="top-block__text">У нас вы найдете много интересных предложений от рекламодателей и сможете зарабатывать на рекламе их офферов у себя в соцсетях.</div>
+									<div class="top-block__info">
+										<div class="top-block__slogan top-block__slogan_small"><span class="top-block__slogan-content">Мы автоматизируем процесс работы блоггеров с рекламодателями.</span></div>
 
-									<a data-fancybox data-src="#registr" href="javascript:;" class="btn">Регистрация</a>
+										<div class="top-block__text">У нас вы найдете много интересных предложений от рекламодателей и сможете зарабатывать на рекламе их офферов у себя в соцсетях.</div>
+
+										<a data-fancybox data-src="#registr" href="javascript:;" class="btn">Регистрация</a>
+									</div>
 								</div>
 							</div>
 
@@ -116,7 +121,7 @@
 
 					<div class="container">
 						<div class="row">
-							<div class="step-item-wrap col-4">
+							<div class="step-item-wrap col-md-4">
 								<div class="step-item">
 									<div class="step-item__img">
 										<div class="step-item__icon">
@@ -134,7 +139,7 @@
 								</div>
 							</div>
 
-							<div class="step-item-wrap col-4">
+							<div class="step-item-wrap col-md-4">
 								<div class="step-item">
 									<div class="step-item__img">
 										<div class="step-item__icon">
@@ -152,7 +157,7 @@
 								</div>
 							</div>
 
-							<div class="step-item-wrap col-4">
+							<div class="step-item-wrap col-md-4">
 								<div class="step-item">
 									<div class="step-item__img">
 										<div class="step-item__icon">
@@ -170,7 +175,7 @@
 								</div>
 							</div>
 
-							<div class="step-item-wrap col-4">
+							<div class="step-item-wrap col-md-4">
 								<div class="step-item">
 									<div class="step-item__img">
 										<div class="step-item__icon">
@@ -188,7 +193,7 @@
 								</div>
 							</div>
 
-							<div class="step-item-wrap col-4">
+							<div class="step-item-wrap col-md-4">
 								<div class="step-item">
 									<div class="step-item__img">
 										<div class="step-item__icon">
@@ -206,7 +211,7 @@
 								</div>
 							</div>
 
-							<div class="step-item-wrap col-4">
+							<div class="step-item-wrap col-md-4">
 								<div class="step-item">
 									<div class="step-item__img">
 										<div class="step-item__icon">
@@ -272,7 +277,7 @@
 
 					<div class="container">
 						<div class="row">
-							<div class="advant-item-wrap col-4">
+							<div class="advant-item-wrap col-md-6 col-lg-4">
 								<div class="advant-item">
 									<div class="advant-item__icon">
 											<div class="advant-item__icon-content">
@@ -287,7 +292,7 @@
 								</div>
 							</div>
 
-							<div class="advant-item-wrap col-4">
+							<div class="advant-item-wrap col-md-6 col-lg-4">
 								<div class="advant-item">
 									<div class="advant-item__icon">
 											<div class="advant-item__icon-content">
@@ -302,7 +307,7 @@
 								</div>
 							</div>
 
-							<div class="advant-item-wrap col-4">
+							<div class="advant-item-wrap col-md-6 col-lg-4">
 								<div class="advant-item">
 									<div class="advant-item__icon">
 											<div class="advant-item__icon-content">
@@ -317,7 +322,7 @@
 								</div>
 							</div>
 
-							<div class="advant-item-wrap col-4">
+							<div class="advant-item-wrap col-md-6 col-lg-4">
 								<div class="advant-item">
 									<div class="advant-item__icon">
 											<div class="advant-item__icon-content">
@@ -332,7 +337,7 @@
 								</div>
 							</div>
 
-							<div class="advant-item-wrap col-4">
+							<div class="advant-item-wrap col-md-6 col-lg-4">
 								<div class="advant-item">
 									<div class="advant-item__icon">
 											<div class="advant-item__icon-content">
@@ -347,7 +352,7 @@
 								</div>
 							</div>
 
-							<div class="advant-item-wrap col-4">
+							<div class="advant-item-wrap col-md-6 col-lg-4">
 								<div class="advant-item">
 									<div class="advant-item__icon">
 											<div class="advant-item__icon-content">
@@ -369,7 +374,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="col-12">
-								<div class="partner-list">
+								<div class="partner-list js-partner-list">
 									<div class="partner-list__item">
 										<a href="#" class="partner-list__content">
 											<img src="img/partner1.png" alt="" class="partner-list__icon-color">
@@ -659,6 +664,7 @@
 		<script src="js/jquery-3.4.1.min.js"></script>
 		<script src="js/vendor/fancybox/jquery.fancybox.min.js"></script>
 		<script src="js/vendor/inputmask/jquery.maskedinput.min.js"></script>
+		<script src="js/vendor/slick/slick.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
